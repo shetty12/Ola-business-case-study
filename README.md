@@ -9,31 +9,33 @@ The primary goal of this project is to extract meaningful insights from the Ola 
 **Key Steps Involved**:
 Data Loading and Cleaning: Handle missing values, convert relevant columns to appropriate data types, and clean up unnecessary columns.
 
-Exploratory Data Analysis (EDA): Investigate key variables like gender distribution, education levels, and explore the data for patterns and potential insights.
+**Exploratory Data Analysis (EDA)**: Investigate key variables like gender distribution, education levels, and explore the data for patterns and potential insights.
 
-Feature Engineering: Transform columns and create new features that may enhance model performance.
-Model Building: Use a Random Forest classifier from the scikit-learn library to build a predictive model.
+**Feature Engineering**: Transform columns and create new features that may enhance model performance.
 
-Feature Importance: Analyze which features most significantly contribute to the Random Forest model's decision-making using Mean Decrease in Impurity (MDI).
+**Model Building**: Use a Random Forest classifier from the scikit-learn library to build a predictive model.
 
-Visualization: Use matplotlib to visualize data and the importance of various features.
+**Feature Importance**: Analyze which features most significantly contribute to the Random Forest model's decision-making using Mean Decrease in Impurity (MDI).
+
+**Visualization**: Use matplotlib to visualize data and the importance of various features.
 Objectives
 
-Understand Driver Behavior: Identify patterns in driver data, such as how gender, education level, and date of joining impact performance.
+**Understand Driver Behavior**: Identify patterns in driver data, such as how gender, education level, and date of joining impact performance.
 Predict Outcomes: Build a model to predict key outcomes based on driver data.
 
-Feature Importance: Determine which features (e.g., date of joining, gender, education level) play the most significant role in predicting outcomes.
+**Feature Importance**: Determine which features (e.g., date of joining, gender, education level) play the most significant role in predicting outcomes.
 Data Cleaning and Preprocessing
 The dataset is preprocessed to ensure that it is clean and suitable for machine learning tasks. Key steps include:
 
 **Handling Missing Data**: Assess the percentage of missing values in each column and decide whether to impute or drop missing data.
 Datetime Conversion: Convert the relevant date fields (MMM-YY, Dateofjoining, LastWorkingDate) into the proper datetime format for easier analysis.
-Feature Encoding: Transform categorical variables like Gender and Education_Level into numerical formats to be used by the machine learning model.
+
+**Feature Encoding**: Transform categorical variables like Gender and Education_Level into numerical formats to be used by the machine learning model.
 
 **Exploratory Data Analysis (EDA)**
 Before building the model, the dataset is explored for insights. Some key EDA steps include:
 
-Distribution of Gender: Understanding the proportion of male and female drivers.
+**Distribution of Gender**: Understanding the proportion of male and female drivers.
 Education Level Analysis: Analyzing the distribution of education levels among drivers.
 Employment Duration: Investigating the average employment duration of Ola drivers and how it varies with different factors.
 
@@ -75,7 +77,7 @@ Clone the repository:
 Install required Python libraries:
 
 ```bash
-  git clone <repository-url>
+  pip install pandas numpy matplotlib scikit-learn
 ```
 Open the notebook:
 ```bash
